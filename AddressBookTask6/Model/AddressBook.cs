@@ -43,7 +43,7 @@ namespace AddressBookTask6.Model
         public void deletePerson(Person person)
         {
             Person p;
-            for (int i=0;i<abr.GetAll().Count;i++)
+            for (int i=0;i<listPerson.Count;i++)
             {
                  p = listPerson[i];
                 if (p.Email == person.Email)
@@ -57,17 +57,18 @@ namespace AddressBookTask6.Model
         }
         public void updatePerson(Person person)
         {
-            listPerson[selectedIndex] = person;
-            abr.Update(person);
-            //Person personToDelete;
-            //for (int i = 0; i < listPerson.Count; i++)
-            //{
-            //    personToDelete = listPerson[i];
-            //    if (personToDelete.Email == person.Email)
-            //    {
-            //        listPerson[i] = person;
-            //    }
-            //}
+            //listPerson[selectedIndex] = person;
+            
+            Person personToDelete;
+            for (int i = 0; i < listPerson.Count; i++)
+            {
+                personToDelete = listPerson[i];
+                if (personToDelete.Email == person.Email)
+                {
+                    listPerson[i] = person;
+                    abr.Update(person);
+                }
+            }
         }
         public List<Person> searchByLastName(string LastName)
         {

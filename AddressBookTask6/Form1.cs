@@ -69,6 +69,7 @@ namespace AddressBookTask6
         public void list()
         {
             listView1.Items.Clear();
+            a.listPerson.Clear();
             foreach(Person p in abr.GetAll())
             {
                 ListViewItem item1 = new ListViewItem(p.FirstName);
@@ -76,6 +77,7 @@ namespace AddressBookTask6
                 item1.SubItems.Add(p.Email);
                 item1.SubItems.Add(p.Phone);
                 listView1.Items.Add(item1);
+                a.listPerson.Add(p);
             }
         }
         public bool isOk()
@@ -95,7 +97,11 @@ namespace AddressBookTask6
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-
+            p = new Person();
+            p.FirstName = txtFirstName.Text;
+            p.LastName = txtLastName.Text;
+            p.Email = txtEmail.Text;
+            p.Phone = txtPhone.Text;
             //abr.Remove(p);
             a.deletePerson(p);
            
@@ -115,12 +121,8 @@ namespace AddressBookTask6
        // Person pp = new Person();
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            p = new Person();
-            p.FirstName = txtFirstName.Text;
-            p.LastName = txtLastName.Text;
-            p.Email = txtEmail.Text;
-            p.Phone = txtPhone.Text;
 
+           
             a.updatePerson(p);
             //abr.Update(p);
             
@@ -140,10 +142,16 @@ namespace AddressBookTask6
         private void listView1_MouseClick(object sender, MouseEventArgs e)
         {
             a.selectedIndex = listView1.SelectedIndices[0];
+       
             txtFirstName.Text = a.listPerson[a.selectedIndex].FirstName;
             txtLastName.Text = a.listPerson[a.selectedIndex].LastName;
             txtEmail.Text = a.listPerson[a.selectedIndex].Email;
             txtPhone.Text = a.listPerson[a.selectedIndex].Phone;
+            p = new Person();
+            p.FirstName = txtFirstName.Text;
+            p.LastName = txtLastName.Text;
+            p.Email = txtEmail.Text;
+            p.Phone = txtPhone.Text;
             btnAdd.Enabled = false;
             btnUpdate.Enabled = true;
             btnDelete.Enabled = true;

@@ -1,0 +1,10 @@
+c:\users\porosh\documents\visual studio 2015\Projects\AddressBookTask6\AddressBookTask6\bin\Debug\AddressBookTask6.exe.config
+C:\Users\Porosh\Documents\Visual Studio 2015\Projects\AddressBookTask6\AddressBookTask6\bin\Debug\AddressBookTask6.exe
+C:\Users\Porosh\Documents\Visual Studio 2015\Projects\AddressBookTask6\AddressBookTask6\bin\Debug\AddressBookTask6.pdb
+C:\Users\Porosh\Documents\Visual Studio 2015\Projects\AddressBookTask6\AddressBookTask6\obj\Debug\AddressBookTask6.csprojResolveAssemblyReference.cache
+C:\Users\Porosh\Documents\Visual Studio 2015\Projects\AddressBookTask6\AddressBookTask6\obj\Debug\AddressBookTask6.Form1.resources
+C:\Users\Porosh\Documents\Visual Studio 2015\Projects\AddressBookTask6\AddressBookTask6\obj\Debug\AddressBookTask6.Form2.resources
+C:\Users\Porosh\Documents\Visual Studio 2015\Projects\AddressBookTask6\AddressBookTask6\obj\Debug\AddressBookTask6.Properties.Resources.resources
+C:\Users\Porosh\Documents\Visual Studio 2015\Projects\AddressBookTask6\AddressBookTask6\obj\Debug\AddressBookTask6.csproj.GenerateResource.Cache
+C:\Users\Porosh\Documents\Visual Studio 2015\Projects\AddressBookTask6\AddressBookTask6\obj\Debug\AddressBookTask6.exe
+C:\Users\Porosh\Documents\Visual Studio 2015\Projects\AddressBookTask6\AddressBookTask6\obj\Debug\AddressBookTask6.pdb
